@@ -1,0 +1,59 @@
+Linux - Topic #4
+** Vi Editor **
+The Vi editor is a powerful text editor that is ubiquitous in the Linux and Unix world. It has a minimalist design, yet offers a vast array of features for efficient text manipulation. Here’s a guide to get you started with Vi.
+
+✨ Basic Commands
+✔️File Operations :
+1. vi filename - Open or create a file and start editing.
+2. :w - Save the current file.
+3. :w filename - Save the file with a new name.
+4. :q - Quit the editor.
+5. :q! - Quit the editor without saving changes.
+6. :wq - Save the file and quit the editor.
+7. :x - Save the file and quit the editor.
+8. :e filename - Open a different file for editing.
+9. :r filename - Read the contents of another file into the current file.
+
+✔️ Insert Mode
+1. i - Insert text before the cursor.
+2. I - Insert text at the beginning of the line.
+3. a - Append text after the cursor.
+4. A - Append text at the end of the line.
+5. o - Open a new line below the cursor and enter Insert mode.
+6. O - Open a new line above the cursor and enter Insert mode.
+
+✔️ Exiting Insert Mode
+1. Esc - Exit Insert mode and return to Normal mode.
+
+✔️ Editing Text
+1. x - Delete the character under the cursor.
+2. dd - Delete the current line.
+3. dw - Delete from the cursor to the end of the current word.
+4. d$ - Delete from the cursor to the end of the line.
+5. d^ - Delete from the cursor to the beginning of the line.
+6. D - Delete from the cursor to the end of the line (same as d$).
+7. yy - Yank (copy) the current line.
+8. yw - Yank (copy) from the cursor to the end of the current word.
+9. y$ - Yank (copy) from the cursor to the end of the line.
+10. p - Paste the yanked or deleted content after the cursor.
+11. P - Paste the yanked or deleted content before the cursor.
+12. r - Replace the character under the cursor.
+13. R - Enter Replace mode and overwrite existing text.
+14. u - Undo the last change.
+15. Ctrl + r - Redo the undone change.
+
+✔️ Search and Replace
+1. /pattern - Search for a pattern in the file.
+2. ?pattern - Search for a pattern in the file in reverse direction.
+3. n - Repeat the last search in the same direction.
+4. N - Repeat the last search in the opposite direction.
+5. :%s/old/new/g - Replace all occurrences of 'old' with 'new' in the entire file.
+6. :s/old/new/g - Replace all occurrences of 'old' with 'new' in the current line.
+
+✔️ Visual Mode
+1. v - Enter Visual mode to start selecting characters.
+2. V - Enter Visual Line mode to start selecting lines.
+3. Ctrl + v - Enter Visual Block mode to select a block of text.
+4. y - Yank the selected text.
+5. d - Delete the selected text.
+6. ~ - Toggle case of the selected text
